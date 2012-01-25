@@ -35,3 +35,36 @@ Login: haga un login simples solamente para identificar el usuario. Dos user/con
 ----------
 
 Belezura, navegación.
+
+Configuración
+=============
+
+Opcional: tomcat & mysql
+------------------------
+
+Agregue lo siguiente a $CATALINA_HOME/conf/Calalina/localhost/dojwitter.xml
+
+	<Context docBase="/[path-to-project]/src/main/webapp"
+		path="/dojwitter" reloadable="true">
+		<Resource name="jdbc/default" auth="Container" type="javax.sql.DataSource"
+	               maxActive="100" maxIdle="30" maxWait="10000"
+	               username="root" password="root" driverClassName="com.mysql.jdbc.Driver"
+	               url="jdbc:mysql://localhost:3306/dojwitter?autoReconnect=true"/>
+	</Context>
+
+Configure la base de datos: 
+
+- Críe el esquema "dojwitter"
+- Si necesario, actualice el usuario en el archivo dojowitter.xml.
+
+Temporario: hsqldb & tomcat
+---------------------------
+
+	cp ~/.m2/repository/hsqldb/hsqldb/1.8.0.7/hsqldb-1.8.0.7.jar $CATALINA_HOME/shared/lib/
+
+Opcional: japybara
+------------------
+
+Get japybara from https://github.com/gandralf/japybara
+
+	git clone git://github.com/gandralf/japybara.git
