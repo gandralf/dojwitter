@@ -1,2 +1,0 @@
-1) Create pom.xml, web.xml y persistence.xml
-2) Run tomcat

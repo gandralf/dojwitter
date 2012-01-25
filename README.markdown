@@ -68,3 +68,10 @@ Opcional: japybara
 Get japybara from https://github.com/gandralf/japybara
 
 	git clone git://github.com/gandralf/japybara.git
+
+
+Danger, Will Robinson!
+======================
+
+Configure su carpeta de salida de compilación para `src/main/webapp/WEB-INF/classes`, pues el _VRaptor_ hace la
+búsqueda de sus clases en esta carpeta.
