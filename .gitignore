@@ -1,10 +1,12 @@
 .bundle
-db/*.sqlite3
-log/*.log
-tmp/**/*
+db
+log
+tmp
 .classpath
 .settings
 *.iml
 target
 .DS_Store
 .thumb
+.idea
+*.class
